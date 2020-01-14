@@ -63,7 +63,8 @@ https://codepen.io/natalia-beckstead/pen/mdyjRLx?editors=1100
 
 16. What is the difference between a section and a div
 
-    <section> means that the content inside is grouped and should appear as a entry in an outline of a page, <div> does not convey any meaning
+    <section> means that the content inside is grouped and should appear as a entry in an outline of a page, 
+    <div> does not convey any meaning
 
 17. What is CSS used for? 
 
@@ -129,12 +130,33 @@ https://codepen.io/natalia-beckstead/pen/mdyjRLx?editors=1100
 
 37. Walk me through Lambda's git flow. 
 
-    fork -> add TL as a collaborator -> clone repo -> create your own branch -> work on project, add commit and push -> open a pull request -> add TL to the Reviewers and then submit PR
+    fork -> add TL as a collaborator -> clone repo -> create your own branch -> work on project, add commit and push ->
+    open a pull request -> add TL to the Reviewers and then submit PR
 
 Stretch Questions
 
 1. What is the difference between an inline element and a block element?
+
+    inline element does not cause a line break and does not take up the full width of a page, 
+    block element always starts on a new line and takes up the full width of a page, from left to right
+
 2. What happens when an element is positioned absolutely? 
-3. How do I make an element take up only the amount of space it needs but also have the ability to give it a width? 
+
+    gets removed from the normal flow of elements, placed relative to the nearest non-static ancestor or, 
+    if there is no such container, it is placed relative to the page itself. 
+    An element with this type of positioning is not affected by other elements and also it doesn't affect flow of other elements.
+
+3. How do I make an element take up only the amount of space it needs but also have the ability to give it a width?
+
+    by using box-sizing: border-box;
+
 4. Name 3 elements that are diplay block by default, 2 elements that are display inline by default and 1 element that is display inline-block by default
+
+    block: <header>, <footer>, <div>; inline: <span>, <br>; inline-block: <img>
+
 5. In your own words, explain the box model. What is the fix for the box model?
+
+    each element take some space named box. elements can be grouped so it will be like a "box with boxes inside". this space devided on 
+    element itself, wrapped into space named padding, wich wrapped into border, and border into margin.
+    It's had to control size of actual box by changing all this properties, but we can use box-sizing: border-box; to 
+    set up box size and leave the math of other properties to computer.
